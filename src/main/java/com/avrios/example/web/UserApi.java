@@ -1,8 +1,6 @@
 package com.avrios.example.web;
 
-import com.avrios.example.domain.Driver;
 import com.avrios.example.domain.User;
-import com.avrios.example.service.DriverService;
 import com.avrios.example.service.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

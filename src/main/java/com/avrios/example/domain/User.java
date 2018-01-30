@@ -1,11 +1,7 @@
 package com.avrios.example.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
 import java.time.Instant;
 
-@Getter
 public class User {
     private String name;
 
@@ -15,5 +11,13 @@ public class User {
         this.name = name;
 
         lastLogin = Instant.now().minusSeconds(3600);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Instant getLastLogin() {
+        return lastLogin;
     }
 }
