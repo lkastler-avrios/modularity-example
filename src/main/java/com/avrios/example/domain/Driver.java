@@ -1,8 +1,12 @@
 package com.avrios.example.domain;
 
+import lombok.Getter;
+
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
+@Getter
 public class Driver {
     @NotNull
     private String name;
@@ -12,14 +16,6 @@ public class Driver {
     public Driver(String name) {
         this.name = name;
 
-        drivenMileage = new BigDecimal(Math.random() * 1000).setScale(2, BigDecimal.ROUND_DOWN);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public BigDecimal getDrivenMileage() {
-        return drivenMileage;
+        drivenMileage = new BigDecimal(Math.random() * 1000).setScale(2, RoundingMode.HALF_UP);
     }
 }
