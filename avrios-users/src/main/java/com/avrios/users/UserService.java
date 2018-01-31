@@ -1,7 +1,5 @@
-package com.avrios.example.service;
+package com.avrios.users;
 
-import com.avrios.example.domain.User;
-import com.avrios.example.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;

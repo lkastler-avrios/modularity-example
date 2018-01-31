@@ -1,7 +1,5 @@
-package com.avrios.example.service;
+package com.avrios.drivers;
 
-import com.avrios.example.domain.Driver;
-import com.avrios.example.repository.DriverRepository;
 import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;

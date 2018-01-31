@@ -1,4 +1,4 @@
-package com.avrios.example.domain;
+package com.avrios.users;
 
 import java.time.Instant;
 

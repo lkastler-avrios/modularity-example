@@ -1,13 +1,13 @@
-package com.avrios.example.repository;
+package com.avrios.users;
 
-import com.avrios.example.domain.User;
 import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 import java.util.Map;
 import java.util.stream.Stream;
+
+import static com.google.common.collect.Sets.newHashSet;
 
 @Repository
 public class UserRepository {
@@ -16,7 +16,7 @@ public class UserRepository {
 
     @PostConstruct
     private void init() {
-        users = Maps.newHashMap(Maps.asMap(Sets.newHashSet("Peter", "Roger"), User::new));
+        users = Maps.newHashMap(Maps.asMap(newHashSet("Peter", "Roger"), User::new));
     }
 
     public Stream<User> findAll() {
